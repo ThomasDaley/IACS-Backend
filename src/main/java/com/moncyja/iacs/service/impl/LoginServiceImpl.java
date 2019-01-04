@@ -38,9 +38,9 @@ public class LoginServiceImpl implements LoginService {
                 insertFlag = 500;
             }
         } else if (existFlag == 1) {
-            existFlag = 0;
+            insertFlag = 0;
         } else {
-            existFlag = 500;
+            insertFlag = 500;
         }
         return insertFlag;
     }
